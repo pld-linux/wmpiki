@@ -2,7 +2,7 @@ Summary:	Hosts activity checker
 Summary(pl):	Monitor aktywno¶ci hostów
 Name:		wmpiki
 Version:	0.2.1
-Release:	1
+Release:	2
 License:	GPL
 Group:		X11/Window Managers/Tools
 Source0:	http://clay.ll.pl/download/%{name}-%{version}.tar.gz
@@ -25,7 +25,9 @@ aktywno¶æ hostów w sieci (do o¶miu hostów).
 %setup -q
 
 %build
-%{__make}
+%{__make} \
+	CFLAGS="%{rpmcflags} -Wall" \
+	LIBS="-L/usr/X11R6/%{_lib} -lXpm -lXext -lX11"
 
 %install
 rm -rf $RPM_BUILD_ROOT
