@@ -1,0 +1,13 @@
+[Desktop Entry]
+Name=wmpiki
+Comment=Hosts activity checker
+Comment[pl]=Monitor aktywności hostów
+Exec=wmpiki
+Terminal=false
+Type=Application
+Categories=Applet;
+NotShowIn=GNOME;KDE;
+Encoding=UTF-8
+# vi: encoding=utf-8
+
+
