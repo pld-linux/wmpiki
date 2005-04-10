@@ -1,12 +1,12 @@
 Summary:	Hosts activity checker
 Summary(pl):	Monitor aktywno¶ci hostów
 Name:		wmpiki
-Version:	0.2.1
-Release:	2
+Version:	0.2.4
+Release:	1
 License:	GPL
 Group:		X11/Window Managers/Tools
 Source0:	http://clay.ll.pl/download/%{name}-%{version}.tar.gz
-# Source0-md5:	f76d66a4856746e65a2607b7325d1cf0
+# Source0-md5:	119c87de9c0f2aa2e496a9797b1e9055
 Source1:	%{name}.desktop
 URL:		http://clay.ll.pl/dockapps.html
 BuildRequires:	XFree86-devel
@@ -42,6 +42,6 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc AUTHORS ChangeLog README config.example
+%doc AUTHORS ChangeLog README 
 %attr(755,root,root) %{_bindir}/*
 %{_desktopdir}/docklets/*
