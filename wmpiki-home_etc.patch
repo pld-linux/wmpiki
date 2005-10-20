@@ -1,0 +1,15 @@
+--- wmpiki-0.2.4/src/docklib.c.orig	2005-10-17 21:20:15.000000000 +0200
++++ wmpiki-0.2.4/src/docklib.c	2005-10-17 21:19:55.000000000 +0200
+@@ -364,8 +364,11 @@
+ {
+ static char cfgdir[PATH_MAX];
+ struct stat cfg;
++char *home;
+ 
+-    dcl_strcpy (cfgdir, getenv ("HOME"), PATH_MAX);
++    home = getenv("HOME_ETC") ? getenv("HOME_ETC") : getenv("HOME");
++
++    dcl_strcpy (cfgdir, home, PATH_MAX);
+     dcl_strcat (cfgdir, "/", PATH_MAX);
+     dcl_strcat (cfgdir, cdirectory, PATH_MAX);
+ 
