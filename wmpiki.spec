@@ -3,11 +3,12 @@ Summary(pl):	Monitor aktywno¶ci hostów
 Name:		wmpiki
 Version:	0.2.4
 Release:	1
-License:	GPL
+License:	GPL v2
 Group:		X11/Window Managers/Tools
 Source0:	http://clay.ll.pl/download/%{name}-%{version}.tar.gz
 # Source0-md5:	119c87de9c0f2aa2e496a9797b1e9055
 Source1:	%{name}.desktop
+Patch0:		%{name}-home_etc.patch
 URL:		http://clay.ll.pl/dockapps.html
 BuildRequires:	XFree86-devel
 Requires:	iputils-ping	
@@ -23,6 +24,7 @@ aktywno¶æ hostów w sieci (do o¶miu hostów).
 
 %prep
 %setup -q
+%patch0 -p1
 
 %build
 %{__make} \
