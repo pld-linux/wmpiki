@@ -11,7 +11,7 @@ Source1:	%{name}.desktop
 Patch0:		%{name}-home_etc.patch
 URL:		http://clay.ll.pl/dockapps.html
 BuildRequires:	XFree86-devel
-Requires:	iputils-ping	
+Requires:	iputils-ping
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -44,6 +44,6 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc AUTHORS ChangeLog README 
+%doc AUTHORS ChangeLog README
 %attr(755,root,root) %{_bindir}/*
 %{_desktopdir}/docklets/*
