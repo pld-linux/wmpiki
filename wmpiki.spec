@@ -1,5 +1,5 @@
 Summary:	Hosts activity checker
-Summary(pl):	Monitor aktywno禼i host體
+Summary(pl.UTF-8):   Monitor aktywno艣ci host贸w
 Name:		wmpiki
 Version:	0.2.4
 Release:	1
@@ -18,9 +18,9 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 Wmpiki is a dockapp which checks and displays small leds for indicate
 hosts activity (up to eight hosts).
 
-%description -l pl
-Wmpiki jest apletem, kt髍y sprawdza i przy pomocy ma硑ch diod wskazuje
-aktywno舵 host體 w sieci (do o秏iu host體).
+%description -l pl.UTF-8
+Wmpiki jest apletem, kt贸ry sprawdza i przy pomocy ma艂ych diod wskazuje
+aktywno艣膰 host贸w w sieci (do o艣miu host贸w).
 
 %prep
 %setup -q
