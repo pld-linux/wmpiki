@@ -1,5 +1,5 @@
 Summary:	Hosts activity checker
-Summary(pl.UTF-8):   Monitor aktywności hostów
+Summary(pl.UTF-8):	Monitor aktywności hostów
 Name:		wmpiki
 Version:	0.2.4
 Release:	1
