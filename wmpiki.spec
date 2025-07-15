@@ -24,7 +24,7 @@ aktywność hostów w sieci (do ośmiu hostów).
 
 %prep
 %setup -q
-%patch0 -p1
+%patch -P0 -p1
 
 %build
 %{__make} \
